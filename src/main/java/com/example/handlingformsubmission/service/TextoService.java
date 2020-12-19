@@ -19,6 +19,10 @@ public class TextoService {
         this.textoDao = textoDao;
     }
 
+    public int addTexto(Texto texto) {
+        return textoDao.insertTexto(texto);
+    }
+
     public Optional<Texto> getTextoById(int id){
         return textoDao.selectTextoById(id);
     }

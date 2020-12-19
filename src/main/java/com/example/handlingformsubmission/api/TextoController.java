@@ -30,13 +30,19 @@ public class TextoController {
 	@PostMapping("/texto")
 	public String textoSubmit(@ModelAttribute Texto texto, Model model) {
 		model.addAttribute("texto", texto);
-		return texto.getId() + "";
+		textoService.addTexto(texto);
+		return "result";
 	}
 
-	@GetMapping(path = "texto/{id}")
-	public Texto getPersonById(@PathVariable("id") int id){
-		return textoService.getTextoById(id)
-				.orElse(null);
+	@GetMapping(path = "{id}")
+	public String getPersonById(@PathVariable("id") int id, Model model){
+		System.out.println("Operacion De lectura " + id + textoService.getTextoById(id));
+		Texto def = new Texto();
+		def.setId(-9999);
+		def.setContent("El texto buscado no existe.");
+		model.addAttribute(textoService.getTextoById(id)
+				.orElse(null));
+		return "result";
 	}
 
 }
