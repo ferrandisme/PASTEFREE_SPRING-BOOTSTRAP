@@ -6,8 +6,8 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface TextoDao {
-    
-    int insertTexto(int id, Texto texto);
 
-    Optional<Texto> selectTextoById(UUID id);
+    int insertTexto(Texto texto);
+
+    Optional<Texto> selectTextoById(int id);
 }
