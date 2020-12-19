@@ -1,4 +1,4 @@
-package com.example.handlingformsubmission;
+package com.example.handlingformsubmission.model;
 
 public class Texto {
 

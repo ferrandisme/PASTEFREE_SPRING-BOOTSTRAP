@@ -1,5 +1,6 @@
-package com.example.handlingformsubmission;
+package com.example.handlingformsubmission.api;
 
+import com.example.handlingformsubmission.model.Texto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
