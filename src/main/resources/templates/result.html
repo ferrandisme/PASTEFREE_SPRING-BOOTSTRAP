@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Texto Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Resultado</h1>
+    <p th:text="'Codigo: ' + ${texto.id}" />
+    <p th:text="'Texto: ' + ${texto.content}" />
+    <a href="/texto">Submit another message</a>
+</body>
+</html>

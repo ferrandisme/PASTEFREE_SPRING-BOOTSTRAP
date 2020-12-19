@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>PasteEasy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!-- NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">PasteFree</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(actual)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://ferrandis.me/">Mi web</a>
+        </ul>
+    </div>
+</nav>
+<!-- FORMULARIO PASTE   -->
+<div class="col" p-5>
+    <h2>Texto para el paste</h2>
+    <form action="#" th:action="@{/texto}" th:object="${texto}" method="post" class="form-horizontal">
+        <div class="row-sm p-5">
+            <p>Codigo: <input type="number" th:field="*{id}" /></p>
+        </div>
+        <div class="row-sm p-5">
+            <p>Texto:  <textarea class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;"  rows="5" id="textAreaPaste" <input type="text" th:field="*{content}" /> </textarea> </p>
+        </div>
+        <div class="row align-middle p-5">
+            <p><input type="submit" value="Submit"  class="btn btn-warning" />
+                <input type="reset" value="Reset" class="btn btn-light" /></p>
+        </div>
+    </form>
+</div>
+<!-- TECNOLOGIAS-->
+
+<div id="tech">
+    <div class="container-md">
+
+        <div class="row">
+            <h3 class="text-center pb-5  h1">Tecnologias utilizadas</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://i2.wp.com/curiotek.com/wp-content/uploads/2017/06/Spring-Logo.png?fit=851%2C446&ssl=1" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Se ha utilizado el framework Spring para el backend de la aplicación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://s3-eu-west-1.amazonaws.com/wia-flarum-bucket/2018-06-19/1529425868-938451-json.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Los datos se han almacenado en la base de datos en formato JSON.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-social.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">La interfaz del usuario ha sido realizada mediante BootStrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
+
