@@ -42,7 +42,10 @@ public class TextoController {
 		def.setContent("El texto buscado no existe.");
 		model.addAttribute(textoService.getTextoById(id)
 				.orElse(null));
-		return "result";
+		if(textoService.getTextoById(id).get().getContent() == null)
+			return "error";
+		else
+			return "result";
 	}
 
 }
