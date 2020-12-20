@@ -27,66 +27,67 @@
         </ul>
     </div>
 </nav>
-<!-- FORMULARIO PASTE   -->
-<div class="col" p-5>
-    <h3>Introduce el texto...</h3>
-    <form action="#" th:action="@{/texto}" th:object="${texto}" method="post" class="form-horizontal">
-        <div class="row-sm p-5">
-            <p>Codigo: <input type="number" th:field="*{id}" /></p>
-        </div>
-        <div class="row-sm p-5">
-            <p>Texto:  <textarea class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;"  rows="5" id="textAreaPaste" <input type="text" th:field="*{content}" /> </textarea> </p>
-        </div>
-        <div class="row align-middle p-5">
-            <div class="col-1">
-                <p><input type="submit" value="Enviar"  class="btn btn-warning" /></p>
+<div class="bg-dark">
+    <!-- FORMULARIO PASTE   -->
+    <div class="col" p-5>
+        <h3 class="text-white">Introduce el texto...</h3>
+        <form action="#" th:action="@{/texto}" th:object="${texto}" method="post" class="form-horizontal">
+            <div class="row-sm p-5">
+                <p class="text-white">Codigo: <input class="bg-secondary text-white" type="number" th:field="*{id}" /></p>
             </div>
-            <div class="col-11">
-                <p> <input type="reset" value="Borrar" class="btn btn-light" /></p>
+            <div class="row-sm p-5">
+                <p class="text-white">Texto:  <textarea class="form-control bg-secondary text-white" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;"  rows="5" id="textAreaPaste" <input type="text" th:field="*{content}" /> </textarea> </p>
             </div>
-        </div>
-    </form>
-</div>
-<!-- TECNOLOGIAS-->
-
-<div id="tech">
-    <div class="container-md">
-
-        <div class="row">
-            <h3 class="text-center pb-5  h1">Tecnologias utilizadas</h3>
-        </div>
-
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://i2.wp.com/curiotek.com/wp-content/uploads/2017/06/Spring-Logo.png?fit=851%2C446&ssl=1" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Se ha utilizado el framework Spring para el backend de la aplicación. Este se ha separado en tres capas: API-SERVICIO-DAO , ademas del modelo.</p>
-                    </div>
+            <div class="row align-middle p-5">
+                <div class="col-1">
+                    <p><input type="submit" value="Enviar"  class="btn btn-warning" /></p>
+                </div>
+                <div class="col-11">
+                    <p> <input type="reset" value="Borrar" class="btn btn-secondary" /></p>
                 </div>
             </div>
+        </form>
+    </div>
+    <!-- TECNOLOGIAS-->
 
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2017/01/mongodb.png?w=775" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Se han realizado dos implementaciones de esta base de datos NOSQL, una orientada a AWS y otra en LOCAL.</p>
-                    </div>
-                </div>
+    <div id="tech">
+        <div class="container-md">
+
+            <div class="row">
+                <h3 class="text-center pb-5  h1">Tecnologias utilizadas</h3>
             </div>
 
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-social.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">La interfaz del usuario ha sido realizada mediante BootStrap. Este se ha modificado incluyendo opciones de SPRING para poder comunicarse con el y actualizarse.</p>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img class="card-img-top" src="https://www.dariawan.com/media/images/tutorial-spring-logo.width-400.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-white">Se ha utilizado el framework Spring para el backend de la aplicación. Este se ha separado en tres capas: API-SERVICIO-DAO , ademas del modelo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img class="card-img-top" src="https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2017/01/mongodb.png?w=775" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-white">Se han realizado dos implementaciones de esta base de datos NOSQL, una orientada a AWS y otra en LOCAL.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img class="card-img-top" src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-social.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p  class="card-text text-white">La interfaz del usuario ha sido realizada mediante BootStrap. Este se ha modificado incluyendo opciones de SPRING para poder comunicarse con el y actualizarse.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
