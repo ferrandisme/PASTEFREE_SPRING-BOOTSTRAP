@@ -15,7 +15,7 @@ public class TextoService {
     private final TextoDao textoDao;
 
     @Autowired
-    public TextoService(@Qualifier("fakeDB") TextoDao textoDao) {
+    public TextoService(@Qualifier("mongoLOCAL") TextoDao textoDao) {
         this.textoDao = textoDao;
     }
 
