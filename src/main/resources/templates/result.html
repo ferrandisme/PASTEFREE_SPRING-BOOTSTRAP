@@ -24,11 +24,16 @@
     </div>
 </nav>
 <!-- Results-->
-<h1>Resultado</h1>
-<p th:text="'Codigo: ' + ${texto.id}" />
-<p th:text="'Texto: ' + ${texto.content}" />
-<a href="/texto">Enviar otro mensaje</a>
-
+<div row-sm>
+    <div col-6>
+        <a href="somepage.html" th:href="@{${texto.id}|}">Enlace para compartir</a>
+    </div>
+    <div col-6>
+        <a href="/texto" class="text-center">Crear otro paste</a>
+    </div>
+</div>
+<p class="text-center" th:text="'Codigo: ' + ${texto.id}" />
+<h5 class="text-center" th:text="'' + ${texto.content}" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 </body>
