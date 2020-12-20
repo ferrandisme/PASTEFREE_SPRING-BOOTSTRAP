@@ -34,5 +34,6 @@ Se ha utilizado inyeccion de dependencia, para poder cambiar entre implementacio
 
 ## **CAPTURAS DE LA INTERFAZ DE LA PAGINA**
 
-![alt text](https://i.imgur.com/jF92P4C.png)
-![alt text](https://i.imgur.com/cmONj18.png)
+![alt text](https://i.imgur.com/BfzCgxJ.png)
+![alt text](https://i.imgur.com/R04m9j0.png)
+![alt text](https://i.imgur.com/FLNUx0R.png)
