@@ -29,7 +29,7 @@
 </nav>
 <!-- FORMULARIO PASTE   -->
 <div class="col" p-5>
-    <h2>Texto para el paste</h2>
+    <h3>Introduce el texto...</h3>
     <form action="#" th:action="@{/texto}" th:object="${texto}" method="post" class="form-horizontal">
         <div class="row-sm p-5">
             <p>Codigo: <input type="number" th:field="*{id}" /></p>
@@ -38,8 +38,12 @@
             <p>Texto:  <textarea class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;"  rows="5" id="textAreaPaste" <input type="text" th:field="*{content}" /> </textarea> </p>
         </div>
         <div class="row align-middle p-5">
-            <p><input type="submit" value="Submit"  class="btn btn-warning" />
-                <input type="reset" value="Reset" class="btn btn-light" /></p>
+            <div class="col-1">
+                <p><input type="submit" value="Enviar"  class="btn btn-warning" /></p>
+            </div>
+            <div class="col-11">
+                <p> <input type="reset" value="Borrar" class="btn btn-light" /></p>
+            </div>
         </div>
     </form>
 </div>
@@ -57,16 +61,16 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="https://i2.wp.com/curiotek.com/wp-content/uploads/2017/06/Spring-Logo.png?fit=851%2C446&ssl=1" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Se ha utilizado el framework Spring para el backend de la aplicación.</p>
+                        <p class="card-text">Se ha utilizado el framework Spring para el backend de la aplicación. Este se ha separado en tres capas: API-SERVICIO-DAO , ademas del modelo.</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://s3-eu-west-1.amazonaws.com/wia-flarum-bucket/2018-06-19/1529425868-938451-json.png" alt="Card image cap">
+                    <img class="card-img-top" src="https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2017/01/mongodb.png?w=775" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Los datos se han almacenado en la base de datos en formato JSON.</p>
+                        <p class="card-text">Se han realizado dos implementaciones de esta base de datos NOSQL, una orientada a AWS y otra en LOCAL.</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +79,7 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-social.png" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">La interfaz del usuario ha sido realizada mediante BootStrap.</p>
+                        <p class="card-text">La interfaz del usuario ha sido realizada mediante BootStrap. Este se ha modificado incluyendo opciones de SPRING para poder comunicarse con el y actualizarse.</p>
                     </div>
                 </div>
             </div>
