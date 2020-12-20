@@ -37,9 +37,6 @@ public class TextoController {
 	@GetMapping(path = "{id}")
 	public String getPersonById(@PathVariable("id") int id, Model model){
 		System.out.println("Operacion De lectura " + id + textoService.getTextoById(id));
-		Texto def = new Texto();
-		def.setId(-9999);
-		def.setContent("El texto buscado no existe.");
 		model.addAttribute(textoService.getTextoById(id)
 				.orElse(null));
 		if(textoService.getTextoById(id).get().getContent() == null)
