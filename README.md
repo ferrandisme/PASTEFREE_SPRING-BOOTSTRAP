@@ -1,6 +1,6 @@
 #  PASTE FREE
 
-Este proyecto intenta crear una web similar a https://pastebin.com/tools como proyecto para practicar con Spring, Bootstrap y bases de datos NOSQL como MongoDB.  
+Este proyecto intenta crear una web similar a https://pastebin.com/ como proyecto para practicar con Spring, Bootstrap y bases de datos NOSQL como MongoDB.  
 
 
 ------------
