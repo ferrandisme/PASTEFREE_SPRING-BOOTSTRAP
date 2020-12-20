@@ -32,23 +32,23 @@
     <div class="col" p-5>
         <h3 class="text-white">Introduce el texto...</h3>
         <form action="#" th:action="@{/texto}" th:object="${texto}" method="post" class="form-horizontal">
-            <div class="row-sm p-5">
-                <p class="text-white">Codigo: <input class="bg-secondary text-white" type="number" th:field="*{id}" /></p>
-            </div>
-            <div class="row-sm p-5">
-                <p class="text-white">Texto:  <textarea class="form-control bg-secondary text-white" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;"  rows="5" id="textAreaPaste" <input type="text" th:field="*{content}" /> </textarea> </p>
-            </div>
-            <div class="row align-middle p-5">
-                <div class="col-1">
-                    <p><input type="submit" value="Enviar"  class="btn btn-warning" /></p>
-                </div>
-                <div class="col-11">
-                    <p> <input type="reset" value="Borrar" class="btn btn-secondary" /></p>
-                </div>
-            </div>
-        </form>
-    </div>
-    <!-- TECNOLOGIAS-->
+            <!-- <div class="row-sm p-5">
+                 <p class="text-white">Codigo: <input class="bg-secondary text-white" type="number" th:field="*{id}" /></p>
+             </div>-->
+             <div class="row-sm p-5">
+                 <p class="text-white">Texto:  <textarea class="form-control bg-secondary text-white" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;"  rows="5" id="textAreaPaste" <input type="text" th:field="*{content}" /> </textarea> </p>
+             </div>
+             <div class="row align-middle p-5">
+                 <div class="col-1">
+                     <p><input type="submit" value="Enviar"  class="btn btn-warning" /></p>
+                 </div>
+                 <div class="col-11">
+                     <p> <input type="reset" value="Borrar" class="btn btn-secondary" /></p>
+                 </div>
+             </div>
+         </form>
+     </div>
+     <!-- TECNOLOGIAS-->
 
     <div id="tech">
         <div class="container-md">
