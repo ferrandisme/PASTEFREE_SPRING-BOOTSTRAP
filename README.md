@@ -32,6 +32,7 @@ Se ha utilizado inyeccion de dependencia, para poder cambiar entre implementacio
 ------------
 
 
-## **Interfaz**
+## **CAPTURAS DE LA INTERFAZ DE LA PAGINA**
 
-![alt text](https://i.imgur.com/nKSNOdB.png)
+![alt text](https://i.imgur.com/jF92P4C.png)
+![alt text](https://i.imgur.com/cmONj18.png)
