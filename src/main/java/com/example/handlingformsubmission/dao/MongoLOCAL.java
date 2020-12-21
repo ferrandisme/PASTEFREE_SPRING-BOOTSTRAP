@@ -44,14 +44,6 @@ public class MongoLOCAL implements TextoDao{
         return texto.getId();
     }
 
-    public int generateRandomInt(){
-        int randomNum = ThreadLocalRandom.current().nextInt(-2100000000, 2100000000 + 1);
-        if(selectTextoById(randomNum).equals(Optional.empty()))
-            return randomNum;
-        else
-            return  generateRandomInt();
-    }
-
     @Override
     public Optional<Texto> selectTextoById(int id) {
         connect();

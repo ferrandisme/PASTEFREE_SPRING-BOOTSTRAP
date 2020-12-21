@@ -18,6 +18,8 @@ public class FakeDB implements TextoDao{
 
     @Override
     public int insertTexto(Texto texto) {
+        if(texto.getId() == 0)
+            texto.setId(generateRandomInt());
         DB.add(texto);
         return texto.getId();
     }
